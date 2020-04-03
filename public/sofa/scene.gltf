@@ -342,10 +342,10 @@
   ],
   "images": [
     {
-      "uri": "textures/Cuoio_baseColor.jpeg"
+      "uri": "textures/Cuoio_baseColor.jpg"
     },
     {
-      "uri": "textures/Tessuto_SF_baseColor.jpeg"
+      "uri": "textures/Tessuto_SF_baseColor.jpg"
     }
   ],
   "materials": [

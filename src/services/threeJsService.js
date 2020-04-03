@@ -36,13 +36,16 @@ export function loadObject(object) {
   })
 }
 
-export function loadMesh(mesh) {
+export async function loadMesh(mesh) {
   let textures = []
+  let images = []
 
   for (let i = 0; i < mesh.textures.length; i++) {
     textures.push(loadTexture(mesh.textures[i]))
+    images.push(loadImgPromise(mesh.textures[i].url))
   }
 
+  await Promise.all(images)
   return Promise.all(textures).then(loaded_textures => {
     return {
       name: mesh.name,
@@ -68,6 +71,7 @@ export function loadImgPromise(url) {
   return new Promise((resolve, reject) => {
     let img = new Image()
     img.src = url
+    console.log(img)
     img.onload = resolve
   })
 }

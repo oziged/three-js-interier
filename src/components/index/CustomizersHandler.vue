@@ -27,7 +27,7 @@
     <BaseCustomizer
       v-if="currentCustomizer == 'texture'"
       :items="textures"
-      type="text"
+      type="texture"
       @change="handleTextureChange"
     />
 

@@ -34,7 +34,7 @@ export default new Vuex.Store({
             textures: [
               {
                 name: 'green',
-                url: 'sofa/textures/Tessuto_SF_baseColor.jpeg'
+                url: 'sofa/textures/Tessuto_SF_baseColor.jpg'
               },
               {
                 name: 'blue',
@@ -56,7 +56,7 @@ export default new Vuex.Store({
             textures: [
               {
                 name: 'wood',
-                url: 'sofa/textures/Cuoio_baseColor.jpeg'
+                url: 'sofa/textures/Cuoio_baseColor.jpg'
               },
               {
                 name: 'red',
@@ -97,7 +97,6 @@ export default new Vuex.Store({
 
   mutations: {
     SET_STATE_DATA(state, payload) {
-      console.log(payload.type)
       Object.entries(payload).forEach(item => {
         state[item[0]] = item[1]
       })
