@@ -53,7 +53,7 @@ export default {
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      transition: .3s;
+      transition: background-color .3s;
       min-height: 40px;
       &:hover {
         background: #feffff14;
