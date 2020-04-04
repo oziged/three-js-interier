@@ -48,19 +48,16 @@ export default {
       margin: 0 5px;
       height: 100%;
       min-width: 100px;
-      border-radius: 5px;
-      border: 2px solid rgba(255, 255, 255, 0.24);
+      outline: 2px solid rgba(255, 255, 255, 0.24);
       display: flex;
       justify-content: center;
       align-items: center;
       cursor: pointer;
       transition: .3s;
+      min-height: 40px;
       &:hover {
         background: #feffff14;
       }
-    }
-    .item-color {
-      height: 40px;
     }
     .item-texture {
       height: 40px;
